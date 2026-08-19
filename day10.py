@@ -19,15 +19,28 @@ print("Total Score :", total_score)
 print("Boundaries  :", boundaries)
 print("Dot Balls   :", dot_balls)
 '''
-pin = 1234
-max_attempts = 3
+pin = "1234"
+max_attempts = 5
 current_attempt = 0
 while current_attempt <= max_attempts:
     entered_pin = input("enter the phone lock pin:")
     if entered_pin == pin:
         print("login sucessful")
         break
-    print("entered PIN is wrong..try again carefully")
+    print("entered PIN is wrong")
     current_attempt +=1
 else:
     print("phone locked")
+
+pin = "2612"
+max_attempts = 3
+current_attempt = 0
+while current_attempt <= max_attempts:
+    entered_pin = input("enter the ATM PIN:")
+    if entered_pin == pin:
+        print("login sucessful")
+        break
+    print("entered PIN is wrong..try again carefully")
+    current_attempt +=1
+else:
+    print("account locked,try after 24hours...")
